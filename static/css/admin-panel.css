@@ -1,0 +1,18 @@
+.reviewTitle{
+    position: absolute;
+    width: 600px;
+    height: 50px;
+    left: 420px;
+    top: 192px;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.review{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}

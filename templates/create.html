@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="review">
+        <h1>Форма по отправке запросов</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="reviewTitle">
+                <h1>{{ form.title }}</h1>
+            </div>
+            {{form.review_text }}
+            {{post}}
+            <span>{{ error }}</span>
+            <button type="submit">Отправить отзыв</button>
+        </form>
+    </div>
+</body>
+</html>
